@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../font/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("../img/bg.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navcustom{
+	background-color: #fff;
+	border-bottom: solid 3px #37474f;
+	box-shadow: 0 0 5px #1b1b1b; 
+}
+.brand{
+	color: #37474f !important;
+}
+@media only screen and (min-width: 768px){
+	.navigation>li>a{
+	color: #37474f;
+	font-size: 1.5em;
+	border-top: solid 3px #fff;
+	-webkit-transition: border-top 500ms ease-in;
+    -ms-transition: border-top 500ms ease-in;
+    transition: border-top 500ms ease-in;
+	}
+	.navigation>li>a:hover{
+		background-color: #fff;	
+		border-top: solid 3px #37474f;
+	}
+	.navigation>li>a:focus{
+		background-color: #fff;
+	}
+}
+@media only screen and (max-width: 768px){
+	.navigation>li>a{
+		color: #37474f !important;
+	}
+	.icon-bar{
+		background-color: #37474f !important;
+	}
+	.navbar-toggle{
+		border-color: #37474f !important;
+	}
+	.navbar-toggle:hover, .navbar-toggle:focus{
+		background-color: #fff !important;
+	}
+	.btn-login{
+		width: 100%;
+		text-align: left;
+		background-color: #fff;
+		border: 0px;
+		padding: 10px 15px;
+		line-height: 20px;
+		color: #37474f;
+	}
+	.btn-login > span{
+		margin-right: 5px;
+	}
+	.label-login{
+		color: #37474f;
+	}
+	.input-login{
+		display: inline-block;
+		border: solid 2px #37474f;
+		width: 70%;
+	}
+	.btn-log{
+		font-family: OpenSans;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-right: 20px;
+		padding-left: 20px;
+		background-color: #37474f;
+		color: #fff
+	}
+}
+.navigation > li > a > span{
+	margin-left: 5px;
+}
+.nav-con{
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+.container{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.btn-find{
+	font-family: OpenSans;
+	height: 5em;
+	width: 30%;
+	font-size: 2em;
+	margin: 1em;
+	color: #fff;
+	background-color: #37474f;
+	display: inline-flex;
+  	justify-content: center;
+  	align-items: center;
+	box-shadow: 0 0 5px #1b1b1b; 
+	-webkit-transition	: background-color 500ms ease-in;
+    -ms-transition		: background-color 500ms ease-in;
+    transition-duration : background-color 500ms ease-in;
+}
+.btn-find1{
+	font-family: OpenSans;
+	height: 3em;
+	width: 80%;
+	font-size: 2em;
+	margin: 0.5em;
+	color: #fff;
+	background-color: #37474f;
+	display: inline-flex;
+  	justify-content: center;
+  	align-items: center;
+	box-shadow: 0 0 5px #1b1b1b; 
+}
+.container > a{
+	text-decoration: none;
+}
+.btn-find:hover{
+	background-color: #102027;
+}
+/*#login{
+	border: solid 0.5px rgba( 41, 182, 246, 0.5);
+	background-color: rgba( 41, 182, 246, 0.5);
+	color: #fff;
+	border-radius: 7px;
+	padding: 10px;
+	position: fixed;
+	top: 60px;
+	right: -200px;
+	display: block;
+}*/
+/*.log{
+	display: block;
+}
+.btn-login{
+	background-color: #29b6f6;
+}
+.btn-login:hover{
+	color: #fff;
+	background-color: #2091c4;
+}
+*/
+.footer{
+	font-family: Ubuntu;
+	padding: 0.2em 1.5em;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 2em;
+	background-color: #fff;
+	border-top: solid 3px #37474f;
+	box-shadow: 0 0 5px #1b1b1b; 
+}
+.contact{
+	height: 30px;
+	padding: 5px;
+	vertical-align: middle;
+}
+.footer > label{
+	font-size: 0.7em;
+	margin-bottom: 0;
+}
+.footer > ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-icon{
+	font-size: 0.7em;
+}
