@@ -113,8 +113,9 @@ body{
 }
 
 .con{
-	margin-top: 100px;
+	padding-top: 100px;
 	text-align: center;
+	padding-bottom: 100px;
 }
 
 .find-categories-md{
