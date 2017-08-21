@@ -6,6 +6,10 @@
     font-family: OpenSans;
     src: url(../font/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: Pop;
+    src: url(../font/Poppins-Light.ttf);
+}
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -18,6 +22,7 @@
 html,body{
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -83,7 +88,7 @@ body{
 	}
 	.input-login{
 		display: inline-block;
-		border: solid 2px #37474f;
+		/*border: solid 2px #37474f;*/
 		width: 70%;
 	}
 	.btn-log{
@@ -95,6 +100,9 @@ body{
 		background-color: #37474f;
 		color: #fff
 	}
+	.footer{
+		padding: 0.2em 0.5em !important;
+	}
 }
 .navigation > li > a > span{
 	margin-left: 5px;
@@ -104,12 +112,12 @@ body{
 	padding-right: 5em;
 }
 
-.container{
+.con{
 	margin-top: 100px;
 	text-align: center;
 }
 
-.btn-find{
+.find-categories-md{
 	font-family: OpenSans;
 	height: 5em;
 	width: 30%;
@@ -125,47 +133,52 @@ body{
     -ms-transition		: background-color 500ms ease-in;
     transition-duration : background-color 500ms ease-in;
 }
-.btn-find1{
+.find-categories-xs{
 	font-family: OpenSans;
 	height: 3em;
 	width: 80%;
 	font-size: 2em;
 	margin: 0.5em;
+	margin-bottom: 0;
 	color: #fff;
+	border-radius: 0;
 	background-color: #37474f;
 	display: inline-flex;
   	justify-content: center;
   	align-items: center;
 	box-shadow: 0 0 5px #1b1b1b; 
 }
+.find-categories-xs:focus{
+	color: #fff !important;
+}
+.btn-find{
+	font-size: 0.5em;
+	margin: 0.3em;
+	border: none;
+	background-color: #37474f;
+	color: #fff;
+}
 .container > a{
 	text-decoration: none;
 }
-.btn-find:hover{
+.find-categories-md:hover{
 	background-color: #102027;
 }
-/*#login{
-	border: solid 0.5px rgba( 41, 182, 246, 0.5);
-	background-color: rgba( 41, 182, 246, 0.5);
+.find-cat{
+	background-color: #fff;
+	width: 80%;
+	margin: auto;
 	color: #fff;
-	border-radius: 7px;
-	padding: 10px;
-	position: fixed;
-	top: 60px;
-	right: -200px;
-	display: block;
-}*/
-/*.log{
-	display: block;
+	text-align: center;
+	font-size: 2em;
 }
-.btn-login{
-	background-color: #29b6f6;
+.find-cat > .form-group > input{
+	font-size: 0.7em;
+	margin: 0;
+	border-radius: 0;
+	font-family: Pop;
 }
-.btn-login:hover{
-	color: #fff;
-	background-color: #2091c4;
-}
-*/
+
 .footer{
 	font-family: Ubuntu;
 	padding: 0.2em 1.5em;
@@ -187,10 +200,19 @@ body{
 	margin-bottom: 0;
 }
 .footer > ul{
+	display: inline-block;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 .footer-icon{
 	font-size: 0.7em;
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	border: solid 2px #37474f;
+	border-radius: 50%;
+}
+.list-icon{
+	float: right;
 }

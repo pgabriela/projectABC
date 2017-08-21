@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- <link rel="stylesheet" href="../css/font-awesome.min.css"> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<title>Rate My Professors</title>
 	</head>
@@ -64,36 +65,59 @@
 		    </div>
 		  </div>
 		</nav>
-		<div class="container hidden-xs">
-			<a href=""><div class="btn-find">Cari Universitas </div></a>
-			<a href=""><div class="btn-find">Cari Dosen  </div></a>
-			<a href=""><div class="btn-find">Berikan Nilai Dosen </div></a>
+		<div class="container con hidden-xs">
+			<a href=""><div class="find-categories-md">Cari Universitas </div></a>
+			<a href=""><div class="find-categories-md">Cari Dosen  </div></a>
+			<a href=""><div class="find-categories-md">Berikan Nilai Dosen </div></a>
 		</div>	
-		<div class="container visible-xs">
-			<a href=""><div class="btn-find1">Cari Universitas </div></a>
-			<a href=""><div class="btn-find1">Cari Dosen  </div></a>
-			<a href=""><div class="btn-find1">Berikan Nilai Dosen </div></a>
+		<div class="container con visible-xs">
+			<!-- <a href=""><div class="btn-find1">Cari Universitas </div></a> -->
+			<button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#find-school">
+				Cari Universitas
+			</button>
+			<div class="collapse navbar-collapse" id="find-school">
+		      <div class="find-cat">
+				<div class="form-group">
+					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
+					<button type="submit" class="btn btn-md btn-find">Cari</button>
+				</div>
+			  </div>
+		    </div>
+		    <button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#find-teacher">
+				Cari Dosen
+			</button>
+			<div class="collapse navbar-collapse" id="find-teacher">
+		      <div class="find-cat">
+				<div class="form-group">
+					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
+					<input type="text" name="" class="form-control" placeholder="Nama Dosen....">
+					<button type="submit" class="btn btn-md btn-find">Cari</button>
+				</div>
+			  </div>
+		    </div>
+		    <button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#rate">
+				Berikan Nilai
+			</button>
+			<div class="collapse navbar-collapse" id="rate">
+		      <div class="find-cat">
+				<div class="form-group">
+					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
+					<input type="text" name="" class="form-control" placeholder="Nama Dosen....">
+					<button type="submit" class="btn btn-md btn-find">Cari</button>
+				</div>
+			  </div>
+		    </div>
 		</div>
 		<div class="footer">
 			<label class="navbar-brand contact">Kontak Kami</label>
-			<!-- <ul class="nav navbar-nav navbar-right footer-icon">
-				<li><a href=""><i class="fa fa-envelope"></i></a></li>
-				<li><a href=""><i class="fa fa-binoculars"></i></a></li>
-			</ul> -->
+			<ul class="list-icon">
+				<li class="footer-icon"><a href=""><i class="fa fa-envelope"></i></a></li>
+				<li class="footer-icon"><a href=""><i class="fa fa-binoculars"></i></a></li>
+			</ul>
 		</div>
-		<!-- <div class="container-fluid" id="login">
-			<div class="form-group">
-      			<label class="log">Username</label>
-      			<input class="log form-control" type="text" name="">
-      		</div>
-	      	<div class="form-group">	
-	      		<label class="log">Password</label>
-	      		<input class="log form-control" type="password" name="">
-	      	</div>
-	      	<button type="button" class="btn btn-login">Login</button>
-	    </div> -->
 		<script type="text/javascript" src="../js/javascript.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<script src="../js/semantic.min.js"></script>
 	</body>
 </html>
