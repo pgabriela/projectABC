@@ -112,9 +112,9 @@ body{
 }
 
 .con{
-	padding-top: 100px;
+	padding-top: 10%;
 	text-align: center;
-	padding-bottom: 100px;
+	padding-bottom: 10%;
 }
 
 .find-categories-md{
@@ -221,6 +221,60 @@ body{
 	font-weight: bold;
 }
 /*---------------------End Login-----------------------------------------*/
+/*---------------------Register------------------------------------------*/
+@media only screen and (min-width: 768px){
+	.register-content{
+		width: 100%;
+		text-align: left;
+	}
+	.register-header{
+		background-color: #fff;
+		color: #37474f;
+		font-size: 2em;
+		font-family: Pop;
+		padding: 1em;
+		box-shadow: 0 0 5px #1b1b1b; 
+	}
+	.register-form{
+		background-color: #37474f;
+		padding: 2em 3em;
+		box-shadow: 0 0 5px #1b1b1b; 
+	}	
+	.register-form > .form > .name-field > .field{
+		width: 33.33%;
+	}
+	.register-form > .form > .fields > .field{
+		width: 50%;
+	}
+	.register-form > .form > .fields > .field > label{
+		color: #fff;
+		font-size: 1.5em;
+		font-family: OpenSans;
+		font-weight: 200;
+	}
+	.register-form > .form > .fields > .field > input{
+		color: #37474f;
+		font-size: 1.5em;
+		font-family: Pop;
+	}
+	.input-reg{
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.input-reg > input{
+		border-radius: 0 !important;
+	}
+	.label-reg{
+		width: 20%;
+		color: #37474f;
+		border-radius: 0 !important;
+	}
+}
+
+
+/*---------------------End Register--------------------------------------*/
+
+
 
 .footer{
 	font-family: Ubuntu;
