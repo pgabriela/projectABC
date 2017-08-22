@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<title>Register</title>
+	<title>Daftar</title>
 </head>
 <body>
 	<nav class="navbar navbar-fixed-top navcustom hidden-xs">
@@ -17,10 +17,34 @@
 	    </div>
 	    <ul class="nav navbar-nav navbar-right navigation">
 	      <li>
-	      	<a href="#"><span class="glyphicon glyphicon-user"></span><span>Sign Up</span></a>
+	      	<a href="#"><span class="fa fa-user-plus"></span><span>Daftar</span></a>
 	      </li>
 	      <li>
-	      	<a href="#"><span class="glyphicon glyphicon-log-in"></span><span>Login</span></a>
+		<a href="#" class="dropdown" data-toggle="dropdown">
+		  <span class="glyphicon glyphicon-log-in"></span><span>Masuk</span>
+		</a>
+		<ul class="dropdown-menu" style="width: 250%" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+		  <form method="POST">
+		    <div class="row" style="margin: 1% 1% 1% 1%">
+		      <div class="col-md-12">
+			<li style="margin-bottom: 5%" class="input-group">
+			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+			  <input type="text" placeholder="Username" class="form-control">
+			</li>
+			<li class="input-group">
+			  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			  <input type="password" placeholder="Password" class="form-control">
+			</li>
+			<li style="margin-bottom: 1%" class="text-right">
+			  <a href="" style="font-size: 70%">Lupa password ?</a>
+			</li>
+			<li>
+			  <button type="submit" class="btn btn-primary" style="width: 100%">Masuk</button>
+			</li>
+		      </div>
+		    </div>
+		  </form>
+		</ul>
 	      </li>
 	    </ul>
 	  </div>
@@ -37,8 +61,8 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navigation">
-	        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+	        <li><a href="#"><span class="fa fa-user-plus"></span> Daftar</a></li>
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp Masuk</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -47,22 +71,22 @@
 	<div class="container con">
 		<div class="register-content">
 			<div class="register-header">
-				Create an Account
+				Buat Akun
 			</div>
 			<div class="register-form">
 				<div class="ui form">
 				  <div class="fields name-field">
 				    <div class="field">
-				      <label>First name</label>
-				      <input type="text" placeholder="First Name">
+				      <label>Nama Depan</label>
+				      <input type="text">
 				    </div>
 				    <div class="field">
-				      <label>Middle name</label>
-				      <input type="text" placeholder="Middle Name">
+				      <label>Nama Tengah</label>
+				      <input type="text">
 				    </div>
 				    <div class="field">
-				      <label>Last name</label>
-				      <input type="text" placeholder="Last Name">
+				      <label>Nama Belakang</label>
+				      <input type="text">
 				    </div>
 				  </div>
 				  <div class="fields">
