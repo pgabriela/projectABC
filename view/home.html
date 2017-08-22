@@ -17,10 +17,34 @@
 		    </div>
 		    <ul class="nav navbar-nav navbar-right navigation">
 		      <li>
-		      	<a href="#"><span class="glyphicon glyphicon-user"></span><span>Sign Up</span></a>
+		      	<a href="#"><span class="fa fa-user-plus"></span><span>Sign Up</span></a>
 		      </li>
 		      <li onclick="myFunction()">
-		      	<a href="#"><span class="glyphicon glyphicon-log-in"></span><span>Login</span></a>
+		      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			  <span class="glyphicon glyphicon-log-in"></span><span>Login</span>
+			</a>
+			<div class="dropdown-menu" style="width: 250%">
+		 	  <form method="POST">
+			    <div class="row" style="margin: 1% 1% 1% 1%">
+			      <div class="col-md-12">
+			        <li style="margin-bottom: 5%" class="input-group">
+				  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				  <input type="text" placeholder="Username" class="form-control">
+				</li>
+			        <li class="input-group">
+				  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				  <input type="password" placeholder="Password" class="form-control">
+				</li>
+			        <li style="margin-bottom: 1%" class="text-right">
+				  <a href="" style="font-size: 70%">Forget the password ?</a>
+				</li>
+			        <li>
+				  <button type="submit" class="btn btn-primary" style="width: 100%">Sign in</button>
+				</li>
+			      </div>
+			    </div>
+			  </form>
+			</div>
 		      </li>
 		    </ul>
 		  </div>
@@ -37,7 +61,7 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav navigation">
-		        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		        <li><a href="#"><span class="fa fa-user-plus"></span> Sign Up</a></li>
 		        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
 		        </li>
 		      </ul>
