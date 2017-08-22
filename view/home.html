@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 		<title>NILAIDOSEN</title>
 	</head>
 	<body>
@@ -17,13 +18,13 @@
 		    </div>
 		    <ul class="nav navbar-nav navbar-right navigation">
 		      <li>
-		      	<a href="#"><span class="fa fa-user-plus"></span><span>Sign Up</span></a>
+		      	<a href="#"><span class="fa fa-user-plus"></span><span>Daftar</span></a>
 		      </li>
 		      <li onclick="myFunction()">
-		      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			  <span class="glyphicon glyphicon-log-in"></span><span>Login</span>
+		      	<a href="#" class="dropdown" data-toggle="dropdown">
+			  <span class="glyphicon glyphicon-log-in"></span><span>Masuk</span>
 			</a>
-			<div class="dropdown-menu" style="width: 250%">
+			<ul class="dropdown-menu" style="width: 250%" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
 		 	  <form method="POST">
 			    <div class="row" style="margin: 1% 1% 1% 1%">
 			      <div class="col-md-12">
@@ -36,15 +37,15 @@
 				  <input type="password" placeholder="Password" class="form-control">
 				</li>
 			        <li style="margin-bottom: 1%" class="text-right">
-				  <a href="" style="font-size: 70%">Forget the password ?</a>
+				  <a href="" style="font-size: 70%">Lupa password ?</a>
 				</li>
 			        <li>
-				  <button type="submit" class="btn btn-primary" style="width: 100%">Sign in</button>
+				  <button type="submit" class="btn btn-primary" style="width: 100%">Masuk</button>
 				</li>
 			      </div>
 			    </div>
 			  </form>
-			</div>
+			</ul>
 		      </li>
 		    </ul>
 		  </div>
@@ -61,8 +62,8 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav navigation">
-		        <li><a href="#"><span class="fa fa-user-plus"></span> Sign Up</a></li>
-		        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+		        <li><a href="#"><span class="fa fa-user-plus"></span> Daftar</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Masuk</a>
 		        </li>
 		      </ul>
 		    </div>
