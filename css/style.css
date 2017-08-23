@@ -110,11 +110,16 @@ body{
 	padding-left: 5em;
 	padding-right: 5em;
 }
-
 .con{
 	padding-top: 10%;
 	text-align: center;
 	padding-bottom: 10%;
+}
+@media only screen and (max-width: 768px){
+	.con{
+		padding-top: 20%;
+		padding-bottom: 20%;
+	}
 }
 
 .find-categories-md{
@@ -125,6 +130,7 @@ body{
 	font-size: 2.1em;
 	margin: 1em;
 	color: #fff;
+	overflow: hidden;
 	background-color: #37474f;
 	display: inline-flex;
   	justify-content: center;
@@ -241,60 +247,81 @@ body{
 }
 /*---------------------End Login-----------------------------------------*/
 /*---------------------Register------------------------------------------*/
-@media only screen and (min-width: 768px){
-	.register-content{
+.register-content{
 		width: 100%;
 		text-align: left;
-	}
-	.register-header{
+}
+.register-header{
+	background-color: #fff;
+	color: #37474f;
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	padding: 1em;
+	box-shadow: 0 0 5px #1b1b1b; 
+}
+.register-form{
+	background-color: #37474f;
+	box-shadow: 0 0 5px #1b1b1b; 
+}
+.register-form > .form > .fields > .field > label{
+		color: #fff;
+		font-size: 1.5em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 200;
+}
+.register-form > .form > .fields > .field > input{
+	color: #37474f;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+}
+.input-reg{
+		width: 100%;
+		margin-bottom: 1em;
+}
+.input-reg > input{
+	border-radius: 0 !important;
+}
+.label-reg{
+	width: 20%;
+	color: #37474f;
+	border-radius: 0 !important;
+}
+.register-form > .form > button{
+		font-size: 1.5em;
 		background-color: #fff;
-		color: #37474f;
-		font-size: 2em;
-		font-family: 'Lato',sans-serif;
-		padding: 1em;
-		box-shadow: 0 0 5px #1b1b1b; 
-	}
+		color: #37474f
+}
+.register-form > .form > button:hover{
+	color: #37474f
+}
+@media only screen and (min-width: 768px){	
 	.register-form{
-		background-color: #37474f;
 		padding: 2em 3em;
-		box-shadow: 0 0 5px #1b1b1b; 
-	}	
+	}
 	.register-form > .form > .name-field > .field{
 		width: 33.33%;
 	}
 	.register-form > .form > .fields > .field{
 		width: 50%;
 	}
-	.register-form > .form > .fields > .field > label{
-		color: #fff;
-		font-size: 1.5em;
-		font-family: 'Lato',sans-serif;
-		font-weight: 200;
+}
+@media only screen and (max-width: 768px){
+	.register-form{
+		padding: 0 1em;
 	}
-	.register-form > .form > .fields > .field > input{
-		color: #37474f;
-		font-size: 1.5em;
-		font-family: Pop;
-	}
-	.input-reg{
+	.register-form > .form > .name-field > .field{
 		width: 100%;
 		margin-bottom: 1em;
+		margin-top: 0.5em;
 	}
-	.input-reg > input{
-		border-radius: 0 !important;
-	}
-	.label-reg{
-		width: 20%;
-		color: #37474f;
-		border-radius: 0 !important;
+	.register-form > .form > .fields > .field{
+		width: 100%;
+		margin-bottom: 1em;
+		margin-top: 0.5em;
 	}
 	.register-form > .form > button{
-		font-size: 1.5em;
-		background-color: #fff;
-		color: #37474f
-	}
-	.register-form > .form > button:hover{
-		color: #37474f
+		margin-bottom: 1em;
+		margin-top: 0.5em;
 	}
 }
 
