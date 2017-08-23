@@ -123,10 +123,11 @@ body{
 }
 
 .find-categories-md{
-	font-family: OpenSans;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
 	height: 5em;
 	width: 30%;
-	font-size: 2em;
+	font-size: 2.1em;
 	margin: 1em;
 	color: #fff;
 	overflow: hidden;
@@ -140,10 +141,11 @@ body{
     transition-duration : background-color 500ms ease-in;
 }
 .find-categories-xs{
-	font-family: OpenSans;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
 	height: 3em;
 	width: 80%;
-	font-size: 2em;
+	font-size: 2.1em;
 	margin: 0.5em;
 	margin-bottom: 0;
 	color: #fff;
@@ -253,7 +255,7 @@ body{
 	background-color: #fff;
 	color: #37474f;
 	font-size: 2em;
-	font-family: Pop;
+	font-family: 'Lato', sans-serif;
 	padding: 1em;
 	box-shadow: 0 0 5px #1b1b1b; 
 }
@@ -264,13 +266,13 @@ body{
 .register-form > .form > .fields > .field > label{
 		color: #fff;
 		font-size: 1.5em;
-		font-family: OpenSans;
+		font-family: 'Lato', sans-serif;
 		font-weight: 200;
 }
 .register-form > .form > .fields > .field > input{
 	color: #37474f;
 	font-size: 1.5em;
-	font-family: Pop;
+	font-family: 'Lato', sans-serif;
 }
 .input-reg{
 		width: 100%;
@@ -329,7 +331,7 @@ body{
 
 
 .footer{
-	font-family: Ubuntu;
+	font-family: 'Lato',sans-serif;
 	padding: 0.2em 1.5em;
 	position: fixed;
 	bottom: 0;

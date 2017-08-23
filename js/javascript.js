@@ -11,3 +11,8 @@ function myFunction() {
     }
   }
 }
+window.onload = function() {
+    var regTab = document.getElementById("regTab");
+    regTab.style.borderTop = "solid 3px #337ab7";
+    regTab.style.backgroundColor = "#eee";
+};
