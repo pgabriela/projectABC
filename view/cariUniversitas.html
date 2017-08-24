@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<title>Cari Universitas</title>
+</head>
+<body>
+	<h1 style="color: white" align="center">Cari Universitas: </h1>
+	<div align="center">
+	 	<input type="text" placeholder="Universitas Samudra, misalnya" id="universitySearch" onkeyup="search();" size="90"/>
+		<h1 id="theResult" style="color: white"></h1>
+	</div>
+	<ul class="list-group" id="result"></ul>
+	<script src="allData.json"></script>
+	<script>
+	let allData = [
+	  {
+	    "universitas": "Akademi Komunitas Negeri Aceh Barat",
+	  },
+	  {
+	    "universitas": "Institut Seni dan Budaya Indonesia Aceh",
+	  },
+	  {
+	    "universitas": "Politeknik Negeri Lhokseumawe",
+	  },
+	  {
+	    "universitas": "Universitas Malikussaleh",
+	  },
+	  {
+	    "universitas": "Universitas Samudra",
+	  },
+	  {
+	    "universitas": "Universitas Teuku Umar",
+	  },
+	  {
+	    "universitas": "Universitas Sumatera Utara",
+	  },
+	  {
+	    "universitas": "Universitas Negeri Medan",
+	  }
+	];
+	let theSearch = document.getElementById('universitySearch');
+	let result = document.getElementById('theResult');
+
+	function search(){
+			result.innerHTML = "";
+			if (theSearch.value != ""){
+				for (i = 0; i < allData.length; i++){
+					if (allData[i].universitas.toLowerCase().indexOf(theSearch.value.toLowerCase()) != -1)
+							result.innerHTML += allData[i].universitas + "<br />";
+				}
+			}
+	}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
