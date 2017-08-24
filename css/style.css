@@ -99,26 +99,20 @@ body{
 	padding-right: 5em;
 }
 .con{
-	padding-top: 10%;
+	padding-top: 15vh;
 	text-align: center;
-	padding-bottom: 10%;
-}
-@media only screen and (max-width: 768px){
-	.con{
-		padding-top: 20%;
-		padding-bottom: 20%;
-	}
+	padding-bottom: 15vh;
 }
 
 .find-categories-md{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
-	height: 5em;
-	width: 30%;
+	height: 20vh;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	font-size: 2.1em;
-	margin: 1em;
 	color: #fff;
-	overflow: hidden;
 	background-color: #37474f;
 	display: inline-flex;
   	justify-content: center;
@@ -250,6 +244,7 @@ body{
 .register-form{
 	background-color: #37474f;
 	box-shadow: 0 0 5px #1b1b1b;
+	padding: 2em 3em;
 }
 .register-form > .form > .fields > .field > label{
 		color: #fff;
@@ -266,50 +261,45 @@ body{
 		width: 100%;
 		margin-bottom: 1em;
 }
-.input-reg > input{
-	border-radius: 0 !important;
-}
-.label-reg{
-	width: 20%;
-	color: #37474f;
-	border-radius: 0 !important;
-}
 .register-form > .form > button{
 		font-size: 1.5em;
 		background-color: #fff;
-		color: #37474f
+		color: #37474f;
+		margin: 1em 0;
 }
 .register-form > .form > button:hover{
 	color: #37474f
 }
-@media only screen and (min-width: 768px){
-	.register-form{
-		padding: 2em 3em;
-	}
-	.register-form > .form > .name-field > .field{
-		width: 33.33%;
-	}
-	.register-form > .form > .fields > .field{
-		width: 50%;
-	}
+.register-form > .form > .name-field > .field{
+	width: 100%;
+}
+.register-form > .form > .fields > .field{
+	width: 100%;
 }
 @media only screen and (max-width: 768px){
-	.register-form{
-		padding: 0 1em;
-	}
-	.register-form > .form > .name-field > .field{
-		width: 100%;
+	.register-form > .form > .fields > .field{
 		margin-bottom: 1em;
-		margin-top: 0.5em;
+	}
+}
+@media only screen and (max-width: 450px){
+	.register-header{
+		font-size: 1.5em;
 	}
 	.register-form > .form > .fields > .field{
-		width: 100%;
 		margin-bottom: 1em;
-		margin-top: 0.5em;
+	}
+	.register-form > .form > .fields > .field > input{
+		font-size: 1em;
+	}
+	.register-form > .form > .fields > .field > label{
+		font-size: 1em;
+	}
+	.register-form{
+		padding: 1em 2em;
 	}
 	.register-form > .form > button{
-		margin-bottom: 1em;
-		margin-top: 0.5em;
+		font-size: 1em;
+		margin: 1em 0;
 	}
 }
 
