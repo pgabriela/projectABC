@@ -20,48 +20,21 @@
 				</div>
 				<div class="search-result">
 					<div id="theResult"></div>
-					<ul class="list-group" id="result"></ul>
+					<ul class="list-group" id="result">
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<script src="allData.json"></script>
-	<script>
-	let allData = [
-	  {
-	    "universitas": "Akademi Komunitas Negeri Aceh Barat",
-	  },
-	  {
-	    "universitas": "Institut Seni dan Budaya Indonesia Aceh",
-	  },
-	  {
-	    "universitas": "Politeknik Negeri Lhokseumawe",
-	  },
-	  {
-	    "universitas": "Universitas Malikussaleh",
-	  },
-	  {
-	    "universitas": "Universitas Samudra",
-	  },
-	  {
-	    "universitas": "Universitas Teuku Umar",
-	  },
-	  {
-	    "universitas": "Universitas Sumatera Utara",
-	  },
-	  {
-	    "universitas": "Universitas Negeri Medan",
-	  }
-	];
-	let theSearch = document.getElementById('universitySearch');
 
+	<script src="data.js"></script>
+	<script>
+	const theSearch = document.getElementById('universitySearch');
+	let searchResult;
 	function search() {
     	result = document.getElementById('result');
-    	while (result.firstChild) {
-		    result.removeChild(result.firstChild);
-		}
-    	var searchResult = [];
+    	result.innerHTML = "";
+			searchResult = [];
     	if (theSearch.value != "" && theSearch.value.length!=1){
 				for (i = 0; i < allData.length; i++){
 					if (allData[i].universitas.toLowerCase().indexOf(theSearch.value.toLowerCase()) != -1)
@@ -69,12 +42,20 @@
 				}
 			}
 	    for(var i = 0; i < searchResult.length; i++) {
+				  var attributeItem = document.createAttribute("onclick");
+					attributeItem.value = "getTheUniversity(" + i.toString() + ");";
 	        var item = document.createElement('li');
 	        var link = document.createElement('a');
 	        item.appendChild(document.createTextNode(searchResult[i]));
+					item.setAttributeNode(attributeItem);
 	        link.appendChild(item);
-	        result.appendChild(link); 
+	        result.appendChild(link);
 	    }
+	}
+
+	function getTheUniversity(param){
+			result.innerHTML = "";
+			theSearch.value = searchResult[param];
 	}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
