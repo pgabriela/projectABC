@@ -21,7 +21,21 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+/*-------------------General----------------------------------------------------------*/
+.form-header{
+	background-color: #fff;
+	color: #37474f;
+	font-size: 2.5em;
+	font-family: 'Lato', sans-serif;
+	padding: 1em;
+	box-shadow: 0 0 5px #1b1b1b;
+}
+@media only screen and (max-width: 450px){
+	.form-header{
+		font-size: 1.5em;
+	}
+}
+/*-------------------End General------------------------------------------------------*/
 /*-------------------Homepage---------------------------------------------------------*/
 .navcustom{
 	background-color: #fff;
@@ -173,7 +187,6 @@ body{
   transform: scale(1, 1);
   opacity:1;
 }
-
 .dropdown-menu {
   opacity:.3;
   -webkit-transform-origin: top;
@@ -230,16 +243,8 @@ body{
 /*---------------------End Login-----------------------------------------*/
 /*---------------------Register------------------------------------------*/
 .register-content{
-		width: 100%;
-		text-align: left;
-}
-.register-header{
-	background-color: #fff;
-	color: #37474f;
-	font-size: 2em;
-	font-family: 'Lato', sans-serif;
-	padding: 1em;
-	box-shadow: 0 0 5px #1b1b1b;
+	width: 100%;
+	text-align: left;
 }
 .register-form{
 	background-color: #37474f;
@@ -247,28 +252,24 @@ body{
 	padding: 2em 3em;
 }
 .register-form > .form > .fields > .field > label{
-		color: #fff;
-		font-size: 1.5em;
-		font-family: 'Lato', sans-serif;
-		font-weight: 200;
+	color: #fff;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
 }
 .register-form > .form > .fields > .field > input{
 	color: #37474f;
 	font-size: 1.5em;
 	font-family: 'Lato', sans-serif;
 }
-.input-reg{
-		width: 100%;
-		margin-bottom: 1em;
-}
 .register-form > .form > button{
-		font-size: 1.5em;
-		background-color: #fff;
-		color: #37474f;
-		margin: 1em 0;
+	font-size: 1.5em;
+	background-color: #fff;
+	color: #37474f;
+	margin: 1em 0;
 }
 .register-form > .form > button:hover{
-	color: #37474f
+	color: #37474f;
 }
 .register-form > .form > .name-field > .field{
 	width: 100%;
@@ -282,9 +283,6 @@ body{
 	}
 }
 @media only screen and (max-width: 450px){
-	.register-header{
-		font-size: 1.5em;
-	}
 	.register-form > .form > .fields > .field{
 		margin-bottom: 1em;
 	}
@@ -305,6 +303,41 @@ body{
 
 
 /*---------------------End Register--------------------------------------*/
+/*---------------------Cari Univers--------------------------------------*/
+.search-content{
+	width: 100%;
+	text-align: left;
+}
+.search-form{
+	background-color: #37474f;
+	padding: 2em 2em;
+}
+.search-form > .search-input > input{
+	background-color: #fff;
+	border: 1px solid rgba(34,36,38,.15);
+	border-radius: .28571429rem;
+	font-size: 2em;
+	padding: .67857143em .7em;
+	width: 100%;
+}
+.list-group{
+	background-color: #fff;
+	color: #37474f;
+	list-style-type: none;
+	font-size: 2em;
+}
+.list-group > a > li{
+	padding: .67857143em .7em;
+	border: 1px solid rgba(34,36,38,.15);
+}
+.list-group > a{
+	color: #37474f;
+	cursor: pointer;
+}
+.list-group > a > li:hover{
+	background-color: rgba(55,71,79,.30);
+}
+/*---------------------End Cari Uni--------------------------------------*/
 
 
 
