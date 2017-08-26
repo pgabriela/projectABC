@@ -23,41 +23,15 @@
 					<ul class="list-group" id="result">
 					</ul>
 				</div>
+				<button class="ui button default-button">
+				  	Cari
+				</button>
 			</div>
 		</div>
 	</div>
 
-	<script src="data.js"></script>
-	<script>
-	const theSearch = document.getElementById('universitySearch');
-	let searchResult;
-	function search() {
-    	result = document.getElementById('result');
-    	result.innerHTML = "";
-			searchResult = [];
-    	if (theSearch.value != "" && theSearch.value.length!=1){
-				for (i = 0; i < allData.length; i++){
-					if (allData[i].universitas.toLowerCase().indexOf(theSearch.value.toLowerCase()) != -1)
-							searchResult.push(allData[i].universitas);
-				}
-			}
-	    for(var i = 0; i < searchResult.length; i++) {
-				  var attributeItem = document.createAttribute("onclick");
-					attributeItem.value = "getTheUniversity(" + i.toString() + ");";
-	        var item = document.createElement('li');
-	        var link = document.createElement('a');
-	        item.appendChild(document.createTextNode(searchResult[i]));
-					item.setAttributeNode(attributeItem);
-	        link.appendChild(item);
-	        result.appendChild(link);
-	    }
-	}
-
-	function getTheUniversity(param){
-			result.innerHTML = "";
-			theSearch.value = searchResult[param];
-	}
-	</script>
+	<script src="../js/data.js"></script>
+	<script src="../js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
