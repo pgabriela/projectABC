@@ -40,6 +40,10 @@ body{
 	.form-header{
 		font-size: 1.5em;
 	}
+	.default-button{
+		font-size: 1em !important;
+		margin: 0.5em 0 !important;
+	}
 }
 /*-------------------End General------------------------------------------------------*/
 /*-------------------Homepage---------------------------------------------------------*/
@@ -288,22 +292,20 @@ body{
 	}
 	.register-form > .form > .fields > .field > input{
 		font-size: 1em;
+		font-weight: bold;
 	}
 	.register-form > .form > .fields > .field > label{
 		font-size: 1em;
+		font-weight: bold;
 	}
 	.register-form{
 		padding: 1em 2em;
-	}
-	.register-form > .form > button{
-		font-size: 1em;
-		margin: 1em 0;
 	}
 }
 
 
 /*---------------------End Register--------------------------------------*/
-/*---------------------Cari Univers--------------------------------------*/
+/*---------------------Cari General--------------------------------------*/
 .search-content{
 	width: 100%;
 	text-align: left;
@@ -326,8 +328,10 @@ body{
 .list-group{
 	background-color: #fff;
 	color: #37474f;
+	max-height: 300px;
 	list-style-type: none;
 	font-size: 2em;
+	overflow-y: scroll;
 }
 .list-group > a > li{
 	padding: .67857143em .7em;
@@ -340,7 +344,21 @@ body{
 .list-group > a > li:hover{
 	background-color: rgba(55,71,79,.30);
 }
-/*---------------------End Cari Uni--------------------------------------*/
+@media only screen and (max-width: 450px){
+	.list-group{
+		font-weight: bold;
+		font-size: 1em;
+		max-height: 200px;
+	}
+	.list-group > a > li{
+		line-height: 150%;
+	}
+	.search-form > .search-input > input{
+		font-size: 1em;
+		font-weight: bold;
+	}
+}
+/*---------------------End Cari General--------------------------------------*/
 
 
 
