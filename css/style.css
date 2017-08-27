@@ -36,6 +36,27 @@ body{
 	color: #37474f !important;
 	margin: 1em 0 !important;
 }
+.default-content{
+	width: 100%;
+	text-align: left;
+}
+.default-form{
+	background-color: #37474f;
+	box-shadow: 0 0 5px #1b1b1b;
+}
+.search-list{
+	background-color: #fff;
+	color: #37474f;
+	list-style-type: none;
+	font-size: 2em;
+}
+.search-list > a > li{
+	padding: .67857143em .7em;
+	border: 1px solid rgba(34,36,38,.15);
+}
+.search-list > a > li:hover{
+	background-color: rgba(55,71,79,.30);
+}
 @media only screen and (max-width: 450px){
 	.form-header{
 		font-size: 1.5em;
@@ -252,13 +273,7 @@ body{
 }
 /*---------------------End Login-----------------------------------------*/
 /*---------------------Register------------------------------------------*/
-.register-content{
-	width: 100%;
-	text-align: left;
-}
 .register-form{
-	background-color: #37474f;
-	box-shadow: 0 0 5px #1b1b1b;
 	padding: 2em 3em;
 }
 .register-form > .form > .fields > .field > label{
@@ -306,13 +321,7 @@ body{
 
 /*---------------------End Register--------------------------------------*/
 /*---------------------Cari General--------------------------------------*/
-.search-content{
-	width: 100%;
-	text-align: left;
-	scroll-behavior: 
-}
 .search-form{
-	background-color: #37474f;
 	padding: 2em 2em;
 }
 .search-form > .search-input > input{

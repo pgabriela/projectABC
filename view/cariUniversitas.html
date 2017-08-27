@@ -12,13 +12,13 @@
 </head>
 <body>
 	<div class="container con">
-		<div class="search-content">
+		<div class="default-content">
 			<div class="form-header col-md-12">Cari</div>
-			<div class="search-form col-md-12">
+			<div class="default-form search-form col-md-12">
 				<div class="search-input">
 		  			<input placeholder="Nama Universitas" type="text" id="universitySearch" onkeyup="search();">
 				</div>
-				<div class="search-result">
+				<div class="search-popup">
 					<div id="theResult"></div>
 					<ul class="list-group" id="result">
 					</ul>
@@ -26,6 +26,19 @@
 				<button class="ui button default-button">
 				  	Cari
 				</button>
+			</div>
+			<div class="search-result">
+				<div class="form-header col-md-12">Hasil Pencarian</div>
+				<div class="default-form">
+					<ul class="search-list">
+						<a><li>Universitas Samudra</li></a>
+						<a><li>Aceh</li></a>
+						<a><li>Sumatra</li></a>
+						<a><li>Padang</li></a>
+						<a><li>Papua</li></a>
+						<a><li>Sulawesi</li></a>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
