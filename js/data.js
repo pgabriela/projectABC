@@ -1,26 +1,33 @@
 let allData = [
-  {
-    "universitas": "Akademi Komunitas Negeri Aceh Barat",
-  },
-  {
-    "universitas": "Institut Seni dan Budaya Indonesia Aceh",
-  },
-  {
-    "universitas": "Politeknik Negeri Lhokseumawe",
-  },
-  {
-    "universitas": "Universitas Malikussaleh",
-  },
-  {
-    "universitas": "Universitas Samudra",
-  },
-  {
-    "universitas": "Universitas Teuku Umar",
-  },
-  {
-    "universitas": "Universitas Sumatera Utara",
-  },
-  {
-    "universitas": "Universitas Negeri Medan",
-  }
+  {"universitas": ["Akademi Komunitas Negeri Aceh Barat", "AKADEMI KOMUNITAS NEGERI ACEH BARAT DAYA", "AKN", "AKN Aceh Barat", "AKN Aceh Barat Daya"]},
+  {"universitas": ["Institut Seni dan Budaya Indonesia Aceh", "ISBI", "ISBI Aceh"]},
+  {"universitas": ["Politeknik Negeri Lhokseumawe", "PNL"]},
+  {"universitas": ["Universitas Syiah Kuala", "Unsyiah"]},
+  {"universitas": ["Universitas Malikussaleh", "UNIMAL"]},
+  {"universitas": ["Universitas Samudra", "UNSAM"]},
+  {"universitas": ["Universitas Teuku Umar", "UTU"]},
+  {"universitas": ["Universitas Sumatera Utara", "USU"]},
+  {"universitas": ["Universitas Negeri Medan", "UNIMED"]},
+  {"universitas": ["Politeknik Negeri Medan", "Politeknik Universitas Sumatera Utara" ,"Politeknik USU"]},
+  {"universitas": ["Universitas Andalas", "Unand"]},
+  {"universitas": ["Universitas Negeri Padang", "UNP"]},
+  {"universitas": ["Politeknik Negeri Andalas", "Politeknik Andalas", "Politeknik Negeri Padang", "Politeknik Universitas Andalas"]},
+  {"universitas": ["Politeknik Pertanian Negeri Payakumbuh"]},
+  {"universitas": ["Institut Seni Indonesia Padang Panjang", "STSI"]},
+  {"universitas": ["Universitas Riau", "UR"]},
+  {"universitas": ["Politeknik Negeri Bengkalis", "POLBENG"]},
+  {"universitas": ["Universitas Maritim Raja Ali Haji", "UMRAH"]},
+  {"universitas": ["Politeknik Negeri Batam"]},
+  {"universitas": ["Universitas Jambi", "UNJA"]},
+  {"universitas": ["Universitas Bengkulu"]},
+  {"universitas": ["Universitas Sriwijaya", "UNSRI"]},
+  {"universitas": ["Akademi Komunitas Negeri (AKN) Banyuasin", "AKN", "AKN Banyuasin"]},
+  {"universitas": ["Politeknik Negeri Sriwijaya"]},
+  {"universitas": ["Universitas Lampung", "Unila"]},
+  {"universitas": ["Institut Teknologi Sumatera", "ITERA"]},
+  {"universitas": ["Politeknik Negeri Lampung"]},
+  {"universitas": ["Universitas Bangka Belitung", "UBB"]},
+  {"universitas": ["Politeknik Manufaktur Negeri Bangka Belitung"]},
+  {"universitas": ["Universitas Bina Nusantara", "Binus", "Binus University"],
+  "dosen": ["Lili Ayu Wulandhari", "Widodo Budiharto"]}
 ];
