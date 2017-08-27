@@ -13,16 +13,27 @@
 <body>
 	<div class="container con">
 		<div class="search-content">
-			<div class="form-header col-md-12">Cari</div>
+			<div class="form-header col-md-12">Cari Universitas</div>
 			<div class="search-form col-md-12">
+
+				<!-- Universitas section -->
 				<div class="search-input">
-		  			<input placeholder="Nama Universitas" type="text" id="universitySearch" onkeyup="search();">
+		  			<input placeholder="contoh, Universitas Bina Nusantara atau Binus" type="text" id="universitasSearch" onkeyup="searchUniversity();">
 				</div>
 				<div class="search-result">
-					<div id="theResult"></div>
-					<ul class="list-group" id="result">
+					<ul class="list-group" id="universitasSearchResult">
 					</ul>
 				</div>
+				<!-- End of universitas section -->
+
+				<!-- Dosen section -->
+				<div class="search-input" id="dosenSearchSection"></div>
+				<div class="search-result">
+					<ul id="dosenSearchResult">
+					</ul>
+				</div>
+				<!-- End of Dosen section -->
+
 				<button class="ui button default-button">
 				  	Cari
 				</button>
