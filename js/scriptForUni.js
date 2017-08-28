@@ -16,7 +16,8 @@ function searchUniversity() {
 	if (theUniversitasSearch.value != "" && theUniversitasSearch.value.length != 1){
 			for (i = 0; i < allData.length; i++){
 					for (j = 0; j < allData[i].universitas.length; j++){
-							if (allData[i].universitas[j].toLowerCase().indexOf(theUniversitasSearch.value.toLowerCase()) != -1 && !searchResult.includes(allData[i].universitas[0]))
+							temp = allData[i].universitas[j].toLowerCase().indexOf(theUniversitasSearch.value.toLowerCase());
+							if (temp != -1 && (temp == 0 || allData[i].universitas[j][temp-1] == " ") && !searchResult.includes(allData[i].universitas[0]))
 								{
 										searchResult.push(allData[i].universitas[0]);
 										index = i;
@@ -42,8 +43,10 @@ function searchDosen() {
 	searchResult = [];
 	if (theDosenSearch.value != "" && theDosenSearch.value.length!=1){
 			for (i = 0; i < allData[index].dosen.length; i++){
-				if (allData[index].dosen[i].toLowerCase().indexOf(theDosenSearch.value.toLowerCase()) != -1)
+				temp = allData[index].dosen[i].toLowerCase().indexOf(theDosenSearch.value.toLowerCase());
+				if (temp != -1 && (temp == 0 || allData[index].dosen[i][temp-1] == " ")){
 						searchResult.push(allData[index].dosen[i]);
+				}
 			}
 	}
   for(var i = 0; i < searchResult.length; i++) {
