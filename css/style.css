@@ -309,7 +309,7 @@ body{
 .search-content{
 	width: 100%;
 	text-align: left;
-	scroll-behavior: 
+	scroll-behavior:
 }
 .search-form{
 	background-color: #37474f;
@@ -343,6 +343,9 @@ body{
 }
 .list-group > a > li:hover{
 	background-color: rgba(55,71,79,.30);
+}
+#dosenSearch {
+  background-color: grey;
 }
 @media only screen and (max-width: 450px){
 	.list-group{
