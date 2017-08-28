@@ -25,10 +25,12 @@
 				<!-- End of universitas section -->
 
 				<!-- Dosen section -->
-				<div class="search-input" id="dosenSearchSection">
+				<div class="search-input">
+		  			<input type="text" id="dosenSearch" onkeyup="searchDosen();" placeholder="Ketik nama dosen, contoh, Lili Ayu Wulandhari" readonly>
 				</div>
-				<div class="search-popup">
-					<ul id="dosenSearchResult"></ul>
+				<div class="search-result">
+					<ul class="list-group" id="dosenSearchResult">
+					</ul>
 				</div>
 				<!-- End of Dosen section -->
 
@@ -36,25 +38,12 @@
 				  	Cari
 				</button>
 			</div>
-			<div class="search-result">
-				<div class="form-header col-md-12">Hasil Pencarian</div>
-				<div class="default-form col-md-12">
-					<ul class="search-list">
-						<a><li>Universitas Samudra</li></a>
-						<a><li>Aceh</li></a>
-						<a><li>Sumatra</li></a>
-						<a><li>Padang</li></a>
-						<a><li>Papua</li></a>
-						<a><li>Sulawesi</li></a>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 
-	<script src="../js/data.js"></script>
-	<script src="../js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/data.js"></script>
+	<script src="../js/scriptForUni.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
