@@ -10,18 +10,16 @@ let index;
 function searchUniversity() {
 	theDosenSearch.style.backgroundColor = "grey";
 	$("#dosenSearch").prop('readonly', true);
+	theDosenSearch.value = "";
 	uniResult.innerHTML = "";
 	searchResult = [];
 	if (theUniversitasSearch.value != "" && theUniversitasSearch.value.length != 1){
 			for (i = 0; i < allData.length; i++){
 					for (j = 0; j < allData[i].universitas.length; j++){
-							if (allData[i].universitas[j].toLowerCase().indexOf(theUniversitasSearch.value.toLowerCase()) != -1)
+							if (allData[i].universitas[j].toLowerCase().indexOf(theUniversitasSearch.value.toLowerCase()) != -1 && !searchResult.includes(allData[i].universitas[0]))
 								{
-									if (!searchResult.includes(allData[i].universitas[0]))
-										{
-											searchResult.push(allData[i].universitas[0]);
-											index = i;
-										}
+										searchResult.push(allData[i].universitas[0]);
+										index = i;
 								}
 					}
 			}

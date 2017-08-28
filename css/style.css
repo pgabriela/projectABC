@@ -331,7 +331,7 @@ body{
 	max-height: 300px;
 	list-style-type: none;
 	font-size: 2em;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 .list-group > a > li{
 	padding: .67857143em .7em;
