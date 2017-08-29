@@ -225,8 +225,9 @@ body{
   transform: scale(1, 1);
   opacity:1;
 }
-.dropdown-menu {
+.dropdown-menu-custom {
   opacity:.3;
+  width: 100%;
   box-shadow: 0 0 5px #c1d5e0;
   -webkit-transform-origin: top;
   transform-origin: top;
@@ -236,6 +237,10 @@ body{
   display: block;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+}
+.dropdown-menu-custom > button{
+	 width: 100%; 
+	 background-color: #37474f;
 }
 /*---------------------End Homepage--------------------------------------*/
 /*---------------------Login---------------------------------------------*/
@@ -341,6 +346,12 @@ body{
 	padding: .67857143em .7em;
 	width: 100%;
 }
+.radio-input > label{
+	color: #37474f;
+}
+.radio-input{
+	background-color: #fff;
+}
 .list-group{
 	background-color: #fff;
 	color: #37474f;
@@ -379,6 +390,118 @@ body{
 }
 /*---------------------End Cari General--------------------------------------*/
 
+/*---------------------Beri Nilai--------------------------------------------*/
+.info-dosen{
+	padding: 1em 3.5em;
+}
+.info-dosen > .nama-dosen{
+	color: #fff;
+	font-size: 2em;
+	width: 100%;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+.info-dosen > .nama-univ{
+	color: #fff;
+	width: 100%;
+	font-size: 1em;
+	padding: 0 2em;
+}
+.rate-form{
+	background-color: #fff;
+}
+.input-row{
+	border-top: 2px solid rgba(52, 81, 94, .5);
+	padding: 1em 4em;
+}
+.input-matkul{
+	border: solid 1px #37474f;
+	width: 50%;
+}
+.input-matkul > span > .dropdown{
+	display: inline-block;
+}
+.nama-matkul{
+	width: 80%;
+	padding: 0.5em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #37474f;
+	border: none;
+	border-right: solid 1px #37474f;
+}
+.custom{
+	padding: 0.5em;
+}
+.custom > li{
+	cursor: pointer;
+}
+.btn-custom{
+	background-color: transparent;
+	border: none;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.label-input{
+	color: #37474f;
+	font-weight: bold;
+	width: 30%;
+	font-size: 1.5em;
+	display: inline-block;
+}
+.input{
+	display: inline-block;
+}
+.input > input[type="radio"]{
+	display: none;
+}
+.input > input[type="radio"] + label{
+	background-color: #fff;
+	height: 50px;
+	width: 50px;
+	color: #37474f;
+	font-size: 1.5em;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 13.5px;
+	padding-bottom: 13.5px;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+.input > input[type="radio"]:checked + label{
+	background-color: #37474f;
+	color: #fff;
+}
+.input > textarea{
+	width: 500px;
+	height: 200px;
+	padding: 0.5em;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+.input > textarea:focus{
+	border-color: #37474f;
+	box-shadow: 0 0 5px rgba(193, 213, 224, 1);
+}
+.help{
+	display: inline-block;
+	font-size: 1.5em;
+	color: #37474f;
+	margin-left: 2em;
+}
+.input-row > button{
+	background-color: rgba(55, 71, 79, 0.5);
+	border: none;
+	font-size: 1.5em;
+	-webkit-transition: background-color 500ms ease-in;
+    -ms-transition: background-color 500ms ease-in;
+    transition: background-color 500ms ease-in;
+}
+.input-row > button:hover{
+	background-color: rgba(55, 71, 79, 1);
+}
+/*---------------------End Beri Nilai----------------------------------------*/
 
 
 .footer{
