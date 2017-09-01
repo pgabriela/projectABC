@@ -86,7 +86,8 @@ body{
 @media only screen and (min-width: 768px){
 	.navigation>li>a{
 	color: #37474f;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	font-weight: bold;
 	border-top: solid 3px #fff;
 	-webkit-transition: border-top 500ms ease-in;
     -ms-transition: border-top 500ms ease-in;
@@ -99,63 +100,66 @@ body{
 	.navigation>li>a:focus{
 		background-color: #fff;
 	}
+	.nav-con{
+		padding-left: 5em;
+		padding-right: 5em;
+	}
 }
 @media only screen and (max-width: 768px){
 	.navigation>li>a{
 		color: #37474f !important;
+		font-size: 1.2em;
+		margin-top: 5px;
+		margin-bottom: 4.5px;		
 	}
-	.icon-bar{
-		background-color: #37474f !important;
-	}
-	.navbar-toggle{
-		border-color: #37474f !important;
-	}
-	.navbar-toggle:hover, .navbar-toggle:focus{
+	.navigation > li > a:focus{
 		background-color: #fff !important;
 	}
-	.btn-login{
-		width: 100%;
-		text-align: left;
-		background-color: #fff;
-		border: 0px;
-		padding: 10px 15px;
-		line-height: 20px;
-		color: #37474f;
-	}
-	.btn-login > span{
-		margin-right: 5px;
-	}
-	.input-login{
-		display: inline-block;
-		/*border: solid 2px #37474f;*/
-		width: 70%;
-	}
-	.btn-log{
-    font-family: 'Lato', sans-serif;
-		margin-left: 15px;
-		margin-right: 15px;
-		padding-right: 20px;
-		padding-left: 20px;
-		background-color: #37474f;
-		color: #fff
+	.nav-con{
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 	.footer{
 		padding: 0.2em 0.5em !important;
 	}
 }
+.navigation {
+	float: right;
+	margin: 0;
+}
+.nav-con > .navbar-header{
+	float: left;
+}
 .navigation > li > a > span{
 	margin-left: 5px;
 }
-.nav-con{
-	padding-left: 5em;
-	padding-right: 5em;
+.navigation > li{
+	float: left;
+}
+@media only screen and (max-width: 767px){
+	.open .dropdown-custom{
+		display: block;
+		position: absolute !important;
+		float: left !important;
+		min-width: 160px !important;
+		background-color: #fff !important;
+		border: 1px solid rgba(0,0,0,.15) !important;
+		box-shadow: 0 6px 12px rgba(0,0,0,.175) !important;
+		border-radius: 4px !important;
+	}
+}
+.dropdown-custom{
+	color: #37474f;
+	font-size: 1.2em;
+	font-weight: bold;
+	right: 0;
+	left: auto;
 }
 .con{
 	padding-top: 15vh;
 	text-align: center;
 	padding-bottom: 15vh;
 }
-
 .find-categories-md{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
@@ -193,98 +197,13 @@ body{
 .find-categories-xs:focus{
 	color: #fff !important;
 }
-.btn-find{
-	font-size: 0.5em;
-	margin: 0.3em;
-	border: none;
-	background-color: #37474f;
-	color: #fff;
-}
 .container > a{
 	text-decoration: none;
 }
 .find-categories-md:hover{
 	background-color: #102027;
 }
-.find-cat{
-	background-color: #fff;
-	width: 80%;
-	margin: auto;
-	color: #fff;
-	text-align: center;
-	font-size: 2em;
-}
-.find-cat > .form-group > input{
-	font-size: 0.7em;
-	margin: 0;
-	border-radius: 0;
-	font-family: 'Lato', sans-serif;
-}
-.open > .dropdown-menu {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  opacity:1;
-}
-.dropdown-menu-custom {
-  opacity:.3;
-  width: 100%;
-  box-shadow: 0 0 5px #c1d5e0;
-  -webkit-transform-origin: top;
-  transform-origin: top;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-transform: scale(1, 0);
-  display: block;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-}
-.dropdown-menu-custom > button{
-	 width: 100%; 
-	 background-color: #37474f;
-}
 /*---------------------End Homepage--------------------------------------*/
-/*---------------------Login---------------------------------------------*/
-.container-login{
-	height: 100%;
-	width: 100%;
-	display: table;
-	position: absolute;
-}
-.login-content{
-	padding: 5%;
-	vertical-align: middle;
-	display: table-cell;
-}
-.login-header{
-	text-align: center;
-	font-size: 2em;
-	padding: 5%;
-	font-family: 'Lato', sans-serif;
-	background-color: #fff;
-	box-shadow: 0 0 5px #1b1b1b;
-}
-.login-form{
-	background-color: #37474f;
-	color: #fff;
-	padding: 7%;
-	font-family: 'Lato', sans-serif;
-	box-shadow: 0 0 5px #1b1b1b;
-}
-.login-form > .form-group > label{
-	padding-left: 0;
-	padding-right: 0;
-}
-.login-form > .form-group > input{
-	width: 100%;
-	border-radius: 0;
-}
-.login-form > .form-group > button{
-	background-color: #fff;
-	color: #37474f;
-	font-size: 1.3em;
-	font-weight: bold;
-}
-/*---------------------End Login-----------------------------------------*/
 /*---------------------Register------------------------------------------*/
 .register-form{
 	padding: 2em 3em;

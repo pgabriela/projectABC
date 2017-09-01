@@ -10,62 +10,22 @@
 		<title>NILAIDOSEN</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-fixed-top navcustom hidden-xs">
+		<nav class="navbar navbar-fixed-top navcustom">
 		  <div class="container-fluid nav-con">
 		    <div class="navbar-header">
 		      <a class="navbar-brand brand" href="#">NILAIDOSEN</a>
 		    </div>
 		    <ul class="nav navbar-nav navbar-right navigation">
 		      <li>
-		      	<a href="#"><span class="fa fa-user-plus"></span><span>Daftar</span></a>
-		      </li>
-		      <li>
 		      	<a href="#" class="dropdown" data-toggle="dropdown">
-			  <span class="glyphicon glyphicon-log-in"></span><span>Masuk</span>
-			</a>
-			<ul class="dropdown-menu dropdown-menu-custom" style="width: 250%" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-		 	  <form method="POST">
-			    <div class="row" style="margin: 1% 1% 1% 1%">
-			      <div class="col-md-12">
-			        <li style="margin-bottom: 5%" class="input-group">
-				  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-				  <input type="text" placeholder="Username" class="form-control">
-				</li>
-			        <li class="input-group">
-				  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-				  <input type="password" placeholder="Password" class="form-control">
-				</li>
-			        <li style="margin-bottom: 1%" class="text-right">
-				  <a href="" style="font-size: 70%">Lupa password ?</a>
-				</li>
-			        <li>
-				  <button type="submit" class="btn btn-primary" style="width: 100%; background-color: #37474f">Masuk</button>
-				</li>
-			      </div>
-			    </div>
-			  </form>
-			</ul>
-		      </li>
+			  		<span class="glyphicon glyphicon-log-in"></span><span>Masuk</span>
+				</a>
+				<ul class="dropdown-menu dropdown-custom">
+				    <li><a href="#">Google</a></li>
+				    <li><a href="#">Facebook</a></li>
+			  	</ul>
+			  </li>
 		    </ul>
-		  </div>
-		</nav>
-		<nav class="navbar navbar-default navbar-fixed-top visible-xs navcustom">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand brand" href="#">NILAIDOSEN</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav navigation">
-		        <li><a href="#"><span class="fa fa-user-plus"></span> Daftar</a></li>
-		        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp Masuk</a>
-		        </li>
-		      </ul>
-		    </div>
 		  </div>
 		</nav>
 		<div class="container con hidden-xs">
@@ -94,41 +54,15 @@
 			</div>
 		</div>
 		<div class="container con visible-xs">
-			<button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#find-school">
+			<button type="button" class="find-categories-xs btn">
 				Cari Universitas
 			</button>
-			<div class="collapse navbar-collapse" id="find-school">
-		      <div class="find-cat">
-				<div class="form-group">
-					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
-					<button type="submit" class="btn btn-md btn-find">Cari</button>
-				</div>
-			  </div>
-		    </div>
-		    <button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#find-teacher">
+		    <button type="button" class="find-categories-xs btn">
 				Cari Dosen
 			</button>
-			<div class="collapse navbar-collapse" id="find-teacher">
-		      <div class="find-cat">
-				<div class="form-group">
-					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
-					<input type="text" name="" class="form-control" placeholder="Nama Dosen....">
-					<button type="submit" class="btn btn-md btn-find">Cari</button>
-				</div>
-			  </div>
-		    </div>
-		    <button type="button" class="find-categories-xs btn" data-toggle="collapse" data-target="#rate">
+		    <button type="button" class="find-categories-xs btn">
 				Beri Nilai
 			</button>
-			<div class="collapse navbar-collapse" id="rate">
-		      <div class="find-cat">
-				<div class="form-group">
-					<input type="text" name="" class="form-control" placeholder="Nama Universitas....">
-					<input type="text" name="" class="form-control" placeholder="Nama Dosen....">
-					<button type="submit" class="btn btn-md btn-find">Cari</button>
-				</div>
-			  </div>
-		    </div>
 		</div>
 		<div class="footer">
 			<label class="navbar-brand contact">Kontak Kami</label>
