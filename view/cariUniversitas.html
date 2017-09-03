@@ -26,9 +26,13 @@
 
 				<!-- Dosen section -->
 				<div class="search-input">
-					<div class="radio-input">
-						<label><input type="radio" name="optradio">Lihat Daftar Dosen</label>
-						<label><input type="radio" name="optradio">Ketik Nama Dosen</label>	
+					<div class="search-method">
+						<input type="radio" name="searchMethod" id="lihatDaftarDosen">
+						<label class="label-searchmethod" for="lihatDaftarDosen"></label>
+						<label class="labelfor-searchmethod" for="lihatDaftarDosen">Lihat Daftar Dosen</label>
+						<input type="radio" name="searchMethod" id="ketikNamaDosen">
+						<label class="label-searchmethod" for="ketikNamaDosen"></label>
+						<label class="labelfor-searchmethod" for="ketikNamaDosen">Ketik Nama Dosen</label>
 					</div>
 		  			<input type="text" id="dosenSearch" onkeyup="searchDosen();" placeholder="Ketik nama dosen, contoh, Lili Ayu Wulandhari" readonly>
 				</div>
