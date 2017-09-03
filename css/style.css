@@ -342,9 +342,6 @@ body{
 	padding: .67857143em .7em;
 	width: 100%;
 }
-.radio-input > label{
-	color: #37474f;
-}
 .search-method{
 	display: inline-block;
 	margin-bottom: 10px;
@@ -419,20 +416,22 @@ body{
 	}
 }
 .resultWrapper{
-  width: 100%;
-  clear: left;
-  float: left;
+	width: 100%;
+	padding: .67857143em .7em;
+	border: 1px solid rgba(34,36,38,.15);
 }
 .dosenName{
-  clear: left;
-  float: left;
-  font-size: 40px;
+  	font-size: 1em;
+  	font-weight: bold;
+  	line-height: initial;
+  	margin-bottom: 5px;
 }
 .universitasName{
-  clear: left;
-  float: left;
-  margin-top: 12px;
-  font-size: 25px;
+	padding-top: 5px;
+	padding-left: 1em;
+	font-size: .5em;
+	font-weight: bold;
+	border-top: 1px solid rgba(34,36,38,.15);
 }
 /*---------------------End Cari General--------------------------------------*/
 
