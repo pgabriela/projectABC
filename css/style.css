@@ -221,16 +221,6 @@ body{
     	opacity: 1;
   	}
 }
-@keyframes slideRight{
-	from{
-    	transform: translateX(0);
-    	opacity: 1;
- 	}
-  	to{
-    	transform: translateX(200%);
-    	opacity: 0;
-  	}
-}
 @-webkit-keyframes slideLeft{
 	from{
     	transform: translateX(200%);
@@ -241,16 +231,6 @@ body{
     	opacity: 1;
   	}
 }
-@-webkit-keyframes slideRight{
-	from{
-    	transform: translateX(0%);
-    	opacity: 1;
- 	}
-  	to{
-    	transform: translateX(200%);
-    	opacity: 0;
-  	}
-}
 .btn-masuk:focus + .signin{
 	animation-name: slideLeft;
 	animation-duration: 1s;
@@ -258,7 +238,7 @@ body{
 	-webkit-animation-duration: 1s;
 }
 .signin{
-	opacity: 1;
+	opacity: 0;
 	overflow: hidden;
 	list-style-type: none;
 	position: absolute;
@@ -273,10 +253,6 @@ body{
 	border-right: solid #37474f 1px;
 	border-bottom: solid #37474f 1px;
 	box-shadow: 0 0 5px #1b1b1b;
-	animation-name: slideRight;
-	animation-duration: 1s;
-	-webkit-animation-name: slideRight;
-	-webkit-animation-duration: 1s;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
 }
@@ -466,7 +442,6 @@ body{
 	border-left: solid 1px #37474f;
 	border-right: solid 1px #37474f;
 	border-bottom: solid 1px #37474f;
-
 }
 .courseCode-list > li{
 	cursor: pointer;
