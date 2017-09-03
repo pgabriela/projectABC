@@ -156,26 +156,6 @@ body{
 .navigation > li{
 	float: left;
 }
-@media only screen and (max-width: 767px){
-	.open .dropdown-custom{
-		display: block;
-		position: absolute !important;
-		float: left !important;
-		min-width: 160px !important;
-		background-color: #fff !important;
-		border: 1px solid rgba(0,0,0,.15) !important;
-		box-shadow: 0 6px 12px rgba(0,0,0,.175) !important;
-		border-radius: 4px !important;
-	}
-}
-.dropdown-custom{
-	color: #37474f;
-	font-size: 1.2em;
-	font-weight: bold;
-	right: 0;
-	left: auto;
-}
-
 .con{
 	-webkit-animation-name: slideUp;
 	-webkit-animation-duration: 1s;
@@ -461,10 +441,8 @@ body{
 }
 .input-matkul{
 	border: solid 1px #37474f;
-	width: 50%;
-}
-.input-matkul > span > .dropdown{
-	display: inline-block;
+	width: 200px;
+	position: relative;
 }
 .nama-matkul{
 	width: 80%;
@@ -475,15 +453,32 @@ body{
 	border: none;
 	border-right: solid 1px #37474f;
 }
-.custom{
-	padding: 0.5em;
+.courseCode-list{
+	width: 200px !important;
+	right: -1px;
+	left: auto;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	width: inherit;
+	list-style-type: none;
+	margin-bottom: 0;
+	border-left: solid 1px #37474f;
+	border-right: solid 1px #37474f;
+	border-bottom: solid 1px #37474f;
+
 }
-.custom > li{
+.courseCode-list > li{
 	cursor: pointer;
+	font-size: 1.5em;
+	color: #37474f;
+	padding: 0.5em;
+	font-weight: bold;
+	border-top: solid 1px #37474f;
 }
-.btn-custom{
-	background-color: transparent;
-	border: none;
+.btn-dropdown{
+	cursor: pointer;
+	display: inline-block;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
@@ -536,15 +531,15 @@ body{
 	margin-left: 2em;
 }
 .input-row > button{
-	background-color: rgba(55, 71, 79, 0.5);
+	background-color: rgba(55, 71, 79, 1);
 	border: none;
 	font-size: 1.5em;
-	-webkit-transition: background-color 500ms ease-in;
-    -ms-transition: background-color 500ms ease-in;
-    transition: background-color 500ms ease-in;
+	-webkit-transition: background-color 200ms ease-in;
+    -ms-transition: background-color 200ms ease-in;
+    transition: background-color 200ms ease-in;
 }
 .input-row > button:hover{
-	background-color: rgba(55, 71, 79, 1);
+	background-color: rgba(55, 71, 79, 0.7);
 }
 /*---------------------End Beri Nilai----------------------------------------*/
 
