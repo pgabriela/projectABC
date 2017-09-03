@@ -13,30 +13,23 @@
 <body>
 	<div class="container con">
 		<div class="default-content">
-			<div class="form-header col-md-12">Cari</div>
+			<div class="form-header col-md-12">Cari Dosen</div>
 			<div class="default-form search-form col-md-12">
-				<!-- Universitas section -->
+				
+				<!-- Input-for-Dosen section -->
 				<div class="search-input">
-		  			<input placeholder="contoh, Universitas Bina Nusantara atau Binus" type="text" id="universitasSearch" onkeyup="searchUniversity();">
+		  			<input placeholder="contoh, Lili Ayu Wulandhari" type="text" id="dosenUniSearch" onkeyup="searchDosenUniSearch();">
 				</div>
-				<div class="search-result">
-					<ul class="list-group" id="universitasSearchResult"></ul>
-				</div>
-				<!-- End of universitas section -->
+				<!-- End of Input-for-Dosen section -->
 
-				<!-- Dosen section -->
-				<div class="search-input">
-					<div class="radio-input">
-						<label><input type="radio" name="optradio">Lihat Daftar Dosen</label>
-						<label><input type="radio" name="optradio">Ketik Nama Dosen</label>
-					</div>
-		  			<input type="text" id="dosenSearch" onkeyup="searchDosen();" placeholder="Ketik nama dosen, contoh, Lili Ayu Wulandhari" readonly>
-				</div>
+				<!-- Dosen-List section -->
 				<div class="search-result">
-					<ul class="list-group" id="dosenSearchResult">
+					<ul class="list-group" id="dosenUniSearchResult">
+						<li>
+						</li>
 					</ul>
 				</div>
-				<!-- End of Dosen section -->
+				<!-- End of Dosen-List section -->
 
 				<button class="ui button default-button">
 				  	Cari
@@ -47,7 +40,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../js/data.js"></script>
-	<script src="../js/scriptForUni.js"></script>
+	<script src="../js/scriptForDosen.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
