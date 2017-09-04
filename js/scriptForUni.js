@@ -3,11 +3,17 @@ const theUniversitasSearch = document.getElementById('universitasSearch');
 const uniResult = document.getElementById('universitasSearchResult');
 const theDosenSearch = document.getElementById('dosenSearch');
 const dosenResult = document.getElementById('dosenSearchResult');
+const daftarDosen = document.getElementById('lihatDaftarDosen');
+const namaDosen = document.getElementById('ketikNamaDosen');
+let userIsTyping = false;
 let searchResult;
 let index;
 
 // Validate user's input for universitas name
 function searchUniversity() {
+	userIsTyping = true;
+	$("#lihatDaftarDosen").prop('checked', false);
+	$("#ketikNamaDosen").prop('checked', false);
 	theDosenSearch.style.backgroundColor = "grey";
 	$("#dosenSearch").prop('readonly', true);
 	theDosenSearch.value = "";
@@ -65,8 +71,7 @@ function searchDosen() {
 function getTheUniversity(param){
 		uniResult.innerHTML = "";
 	  theUniversitasSearch.value = searchResult[param];
-		theDosenSearch.style.backgroundColor = "white";
-		$("#dosenSearch").prop('readonly', false);
+		userIsTyping = false;
 }
 
 // Retrieve the data of dosen based on user's input
@@ -75,4 +80,17 @@ function getDosen(param){
 	  dosenSearch.value = searchResult[param];
 }
 
+function checkOption(param){
+		if(param && !userIsTyping){
+			$("#dosenSearch").prop('readonly', false);
+			theDosenSearch.style.backgroundColor = "white";
+		}
+		else {
+			$("#dosenSearch").prop('readonly', true);
+			theDosenSearch.style.backgroundColor = "grey";
+		}
+}
+
+daftarDosen.addEventListener("click", function() {checkOption(false);}, false);
+namaDosen.addEventListener("click", function() {checkOption(true);}, false);
 // ------------------------------------end cari univ------------------------------
