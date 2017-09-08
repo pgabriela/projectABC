@@ -64,9 +64,9 @@ body{
 .search-list > a > li:hover{
 	background-color: rgba(55,71,79,.30);
 }
-@keyframes slideUp{
+@keyframes slideDown{
 	from{
-		transform: translateY(10%);
+		transform: translateY(-10%);
 		opacity: 0;
 	}
 	to{
@@ -74,9 +74,9 @@ body{
 		opacity: 1;
 	}
 }
-@-webkit-keyframes slideUp{
+@-webkit-keyframes slideDown{
 	from{
-		transform: translateY(10%);
+		transform: translateY(-10%);
 		opacity: 0;
 	}
 	to{
@@ -157,9 +157,9 @@ body{
 	float: left;
 }
 .con{
-	-webkit-animation-name: slideUp;
+	-webkit-animation-name: slideDown;
 	-webkit-animation-duration: 1s;
-	animation-name: slideUp;
+	animation-name: slideDown;
 	animation-duration: 1s;
 	padding-top: 15vh;
 	text-align: center;
@@ -300,7 +300,8 @@ body{
 }
 .search-method{
 	display: inline-block;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	display: flex;
 	vertical-align: middle;
 }
@@ -517,6 +518,279 @@ body{
 	background-color: rgba(55, 71, 79, 0.7);
 }
 /*---------------------End Beri Nilai----------------------------------------*/
+/*---------------------Nilai Dosen-------------------------------------------*/
+.dosen-form{
+	padding: 2rem;
+	background-color: #37474f;
+	position: relative;
+}
+.btn-rate{
+	background-color: #fff;
+	font-size: 1.5em;
+	position: absolute;
+	right: 0;
+	left: auto;
+	padding: 0.5em;
+	color: #37474f;
+	border: solid 1px #fff;
+	margin-right: 2rem;
+}
+.rate-box{
+	width: 30%;
+	line-height: 1;
+	text-align: center;
+}
+.rate-box-header{
+	font-size: 2em;
+	color: #37474f;
+	background-color: #fff;
+	padding: 0.5em;
+	border-bottom: solid 2px #37474f; 
+}
+.rate-box-content{
+	padding: 0.5em 0;
+	background-color: #fff;
+	color: #37474f;
+	font-size: 5em;
+}
+.btn-detail{
+	display: none;
+}
+.category-wrapper{
+	width: 100%;
+	color: #37474f;
+	margin-top: 2em;
+	clear: both;
+	overflow: auto;
+}
+.category-rate-box{
+	width: 20%;
+	font-size: 1.5em;
+	text-align: center;
+	float: left;
+	line-height: 1;
+	border-right: 3px solid #37474f;
+}
+.category-rate-box-last{
+	border: none;
+}
+.category-rate-box-header{
+	background-color: #fff;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid #37474f;
+}
+.category-rate-box-content{
+	background-color: #fff;
+	font-size: 3em;
+	padding-top: .3em;
+	padding-bottom: .3em;
+}
+.comment-section{
+	width: 100%;
+	margin-top: 2em;
+	clear: both;
+	overflow: auto;
+	color: #37474f;
+}
+.comment-wrapper{
+	margin-top: 2rem;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	background-color: #fff;
+	clear: both;
+	overflow: auto;
+}
+.comment-header{
+	overflow: hidden;
+	padding-bottom: .5rem;
+	margin-bottom: .5rem;
+	border-bottom: 3px solid #37474f;
+}
+.comment-header-left{
+	width: 20%;
+	float: left;
+	line-height: 1;
+}
+.comment-header-right{
+	width: 80%;
+	float: left;
+}
+.comment-category{
+	float: left;
+	width: 80%;
+}
+.comment-rate{
+	float: left;
+	width: 20%;
+	line-height: 1;
+	text-align: right;
+}
+.inside-wrapper{
+	width: 50%;
+	margin-bottom: .7rem;
+	float: left;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-left: 2rem;
+}
+.user-comment{
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+.like{
+	text-align: center;
+	font-size: 1.2rem;
+}
+.btn-like{
+	background-color: transparent;
+	border: none;
+	margin-top: 1rem;
+	margin-right: 2rem;
+}
+.btn-like > i{
+	margin-right: .5rem;
+}
+.emoticon{
+	font-size: 5rem;
+	text-align: center;
+}
+.date{
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+	.rate-box{
+		width: 40%;
+	}
+	.category-rate-box{
+		font-size: 1rem;
+	}
+	.inside-wrapper{
+		font-size: 1rem;
+	}
+	.emoticon{
+		font-size: 4rem;
+		text-align: center;
+	}
+	.date{
+		font-size: 1rem;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 640px){
+	.rate-box-header{
+		font-size: 1.5rem;
+	}
+	.rate-box-content{
+		font-size: 3rem;
+	}
+	.user-comment{
+		font-size: 1rem;
+	}
+	.category-rate-box{
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+	.like{
+		text-align: left;
+	}
+	.category-rate-box-last{
+		border-right: solid 3px #37474f;
+	}
+}
+@media only screen and (max-width: 450px){
+	.btn-rate{
+		font-size: 1em;
+		position: relative;
+		margin-bottom: 1.5rem;
+	}
+	.rate-box{
+		width: 100%;
+		font-weight: bold;
+		margin-bottom: .5rem;
+	}
+	.rate-box-header{
+		font-size: 1.5rem;
+	}
+	.rate-box-content{
+		font-size: 2rem;
+	}
+	.btn-detail{
+		display: block;
+		border: none;
+		padding: 1rem;
+		font-weight: bold;
+	}
+	.category-wrapper{
+		display: none;
+		margin-top: .5rem;
+	}
+	.category-rate-box{
+		width: 100%;
+		border: none;
+		font-weight: bold;
+		margin-bottom: .5rem;
+		padding-right: 0.5rem;
+		padding-left: 1rem;
+		background-color: #fff;
+	}
+	.category-rate-box-last{
+		border: none;
+	}
+	.category-rate-box-header{
+		font-size: 1.3rem;
+		border-bottom: 1px solid rgba(55, 71, 79, 0.5);
+	}
+	.category-rate-box-content{
+		font-size: 1.3rem;
+	}
+	.comment-section{
+		margin-top: 1rem;
+	}
+	.comment-wrapper{
+		margin-top: 1rem;
+		padding: .5rem;
+	}
+	.comment-header{
+		border-bottom: 1px solid rgba(55, 71, 79, 0.5);
+	}
+	.comment-header-left{
+		width: 100%;
+	}
+	.comment-header-right{
+		width: 100%;
+	}
+	.inside-wrapper{
+		width: 100%;
+		padding: 0;
+		font-size: 1rem;
+		margin: 0;
+	}
+	.user-comment{
+		font-size: 1rem;
+	}
+	.like{
+		margin-top: 1rem;
+		text-align: left;
+	}
+	.btn-like{
+		margin-right: 0;
+		width: 100%;
+		font-size: 1rem;
+		text-align: left;
+	}
+	.emoticon{
+		font-size: 3rem;
+	}
+	.date{
+		font-size: 1rem;
+	}
+}
+
+/*---------------------End Nilai Dosen---------------------------------------*/
 
 
 .footer{

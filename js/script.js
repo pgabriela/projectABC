@@ -4,6 +4,9 @@ $(document).ready(function(){
 		$(".courseCode-list").slideToggle();
     	$(".nama-matkul").focus();
 	});
+	$(".btn-detail").click(function() {
+		$(".category-wrapper").slideToggle('slow');
+	});
 	// $(".nama-matkul").blur(function() {
 	//     $(".courseCode-list").slideUp();
 	// });
