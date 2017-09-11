@@ -752,6 +752,16 @@ body{
 	font-size: 5rem;
 	text-align: center;
 }
+.suka, .tidaksuka{
+	transition: font 500ms ease;
+	-webkit-transition: font 500ms ease;
+}
+.suka:hover{
+	font-size: 1.5rem
+}
+.tidaksuka:hover{
+	font-size: 1.5rem
+}
 .date{
 	font-size: 1.5rem;
 	font-weight: bold;
