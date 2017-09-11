@@ -7,9 +7,9 @@ $(document).ready(function(){
 	$(".btn-detail").click(function() {
 		$(".category-wrapper").slideToggle('slow');
 	});
-	// $(".nama-matkul").blur(function() {
-	//     $(".courseCode-list").slideUp();
-	// });
+	$(".course-code").click(function() {
+		$(".nama-matkul").val($(this).text());
+	});
 });
 $(document).click(function (e) {
     e.stopPropagation();
