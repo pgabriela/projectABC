@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Beri Nilai</title>
+</head>
+<body>
+	<div class="container con">
+		<div class="default-content">
+			<div class="form-header col-md-12">Beri Nilai Dosen</div>
+			<div class="default-form col-md-12">
+				<div class="info-dosen">
+					<label class="nama-dosen">Lili Ayu Wulandari</label>
+					<label class="nama-univ">Universitas Bina Nusantara</label>
+				</div>
+				<div class="rate-form">
+					<div class="input-row">
+						<div class="label-input">Kode mata kuliah</div>
+						<div class="input">
+							<div class="input-matkul">
+								<input class="nama-matkul" id="nama-matkul" type="text" name="">
+								<ul class="courseCode-list" id="courseCode-list">
+							      <li>HTML</li>
+							      <li>CSS</li>
+							      <li>JavaScript</li>
+							    </ul>
+								<span>
+									<div class="btn-dropdown">
+										<span class="glyphicon glyphicon-triangle-bottom"></span>
+									</div>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Beri nilai dosen anda</div>
+						<div class="input">
+							<input type="radio" name="rate" id="rate-E">
+							<label for="rate-E">E</label>
+							<input type="radio" name="rate" id="rate-D">
+							<label for="rate-D">D</label>
+							<input type="radio" name="rate" id="rate-C">
+							<label for="rate-C">C</label>
+							<input type="radio" name="rate" id="rate-B">
+							<label for="rate-B">B</label>
+							<input type="radio" name="rate" id="rate-A">
+							<label for="rate-A">A</label>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Tingkat kesulitan</div>
+						<div class="input">
+							<input type="radio" name="diff" id="diff-E">
+							<label for="diff-E">E</label>
+							<input type="radio" name="diff" id="diff-D">
+							<label for="diff-D">D</label>
+							<input type="radio" name="diff" id="diff-C">
+							<label for="diff-C">C</label>
+							<input type="radio" name="diff" id="diff-B">
+							<label for="diff-B">B</label>
+							<input type="radio" name="diff" id="diff-A">
+							<label for="diff-A">A</label>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Konten</div>
+						<div class="input">
+							<input type="radio" name="content" id="cont-E"><label for="cont-E">E</label>
+							<input type="radio" name="content" id="cont-D"><label for="cont-D">D</label>
+							<input type="radio" name="content" id="cont-C"><label for="cont-C">C</label>
+							<input type="radio" name="content" id="cont-B"><label for="cont-B">B</label>
+							<input type="radio" name="content" id="cont-A"><label for="cont-A">A</label>
+						</div>
+						<div class="help" data-toggle="popover" data-content="Bagaimana konten dari ajaran yang diberikan">
+						  <i class="glyphicon glyphicon-question-sign"></i>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Banyaknya tugas</div>
+						<div class="input">
+							<input type="radio" name="workload" id="work-E"><label for="work-E">E</label>
+							<input type="radio" name="workload" id="work-D"><label for="work-D">D</label>
+							<input type="radio" name="workload" id="work-C"><label for="work-C">C</label>
+							<input type="radio" name="workload" id="work-B"><label for="work-B">B</label>
+							<input type="radio" name="workload" id="work-A"><label for="work-A">A</label>
+						</div>
+						<div class="help" data-toggle="popover" data-content="Apakah tugas yang diberikan berlebihan, cukup atau kurang">
+						  <i class="glyphicon glyphicon-question-sign"></i>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Penilaian</div>
+						<div class="input">
+							<input type="radio" name="grade" id="grade-E"><label for="grade-E">E</label>
+							<input type="radio" name="grade" id="grade-D"><label for="grade-D">D</label>
+							<input type="radio" name="grade" id="grade-C"><label for="grade-C">C</label>
+							<input type="radio" name="grade" id="grade-B"><label for="grade-B">B</label>
+							<input type="radio" name="grade" id="grade-A"><label for="grade-A">A</label>
+						</div>
+						<div class="help" data-toggle="popover" data-content="Bagaimana cara dosen menilai">
+						  <i class="glyphicon glyphicon-question-sign"></i>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Pengajaran</div>
+						<div class="input">
+							<input type="radio" name="teach" id="teach-E"><label for="teach-E">E</label>
+							<input type="radio" name="teach" id="teach-D"><label for="teach-D">D</label>
+							<input type="radio" name="teach" id="teach-C"><label for="teach-C">C</label>
+							<input type="radio" name="teach" id="teach-B"><label for="teach-B">B</label>
+							<input type="radio" name="teach" id="teach-A"><label for="teach-A">A</label>
+						</div>
+						<div class="help" data-toggle="popover" data-content="Apakah dosen dapat menjelaskan materi dengan baik">
+						  <i class="glyphicon glyphicon-question-sign"></i>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="label-input">Komentar anda</div>
+						<div class="input">
+							<textarea placeholder="Kesempatan anda untuk lebih spesifik"></textarea>
+						</div>
+					</div>
+					<div class="input-row">
+						<button class="btn btn-primary">Kirimkan Penilaian Anda</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/semantic.min.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>
