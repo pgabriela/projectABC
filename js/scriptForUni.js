@@ -14,7 +14,7 @@ function searchUniversity() {
 	userIsTyping = true;
 	$("#lihatDaftarDosen").prop('checked', false);
 	$("#ketikNamaDosen").prop('checked', false);
-	theDosenSearch.style.backgroundColor = "grey";
+	theDosenSearch.style.opacity = ".5";
 	$("#dosenSearch").prop('readonly', true);
 	theDosenSearch.value = "";
 	uniResult.innerHTML = "";
@@ -31,16 +31,16 @@ function searchUniversity() {
 					}
 			}
 	}
-  for(var i = 0; i < searchResult.length; i++) {
-		  let attributeItem = document.createAttribute("onclick");
-			attributeItem.value = "getTheUniversity(" + i.toString() + ");";
-      let item = document.createElement('li');
-      let link = document.createElement('a');
-      item.appendChild(document.createTextNode(searchResult[i]));
-			item.setAttributeNode(attributeItem);
-      link.appendChild(item);
-      uniResult.appendChild(link);
-  }
+	for(var i = 0; i < searchResult.length; i++) {
+		let attributeItem = document.createAttribute("onclick");
+		attributeItem.value = "getTheUniversity(" + i.toString() + ");";
+	    let item = document.createElement('li');
+	    let link = document.createElement('a');
+	    item.appendChild(document.createTextNode(searchResult[i]));
+		item.setAttributeNode(attributeItem);
+	    link.appendChild(item);
+	    uniResult.appendChild(link);
+	}
 }
 
 // Validate user's input for dosen name
@@ -55,40 +55,40 @@ function searchDosen() {
 				}
 			}
 	}
-  for(var i = 0; i < searchResult.length; i++) {
-		  let attributeItem = document.createAttribute("onclick");
-			attributeItem.value = "getDosen(" + i.toString() + ");";
-      let item = document.createElement('li');
-      let link = document.createElement('a');
-      item.appendChild(document.createTextNode(searchResult[i]));
-			item.setAttributeNode(attributeItem);
-      link.appendChild(item);
-      dosenResult.appendChild(link);
+  	for(var i = 0; i < searchResult.length; i++) {
+		let attributeItem = document.createAttribute("onclick");
+		attributeItem.value = "getDosen(" + i.toString() + ");";
+      	let item = document.createElement('li');
+      	let link = document.createElement('a');
+      	item.appendChild(document.createTextNode(searchResult[i]));
+		item.setAttributeNode(attributeItem);
+ 	    link.appendChild(item);
+    	dosenResult.appendChild(link);
   }
 }
 
 // Retrieve the data of the university based on user's input
 function getTheUniversity(param){
-		uniResult.innerHTML = "";
-	  theUniversitasSearch.value = searchResult[param];
-		userIsTyping = false;
+	uniResult.innerHTML = "";
+	theUniversitasSearch.value = searchResult[param];
+	userIsTyping = false;
 }
 
 // Retrieve the data of dosen based on user's input
 function getDosen(param){
-		dosenResult.innerHTML = "";
-	  dosenSearch.value = searchResult[param];
+	dosenResult.innerHTML = "";
+	dosenSearch.value = searchResult[param];
 }
 
 function checkOption(param){
-		if(param && !userIsTyping){
-			$("#dosenSearch").prop('readonly', false);
-			theDosenSearch.style.backgroundColor = "white";
-		}
-		else {
-			$("#dosenSearch").prop('readonly', true);
-			theDosenSearch.style.backgroundColor = "grey";
-		}
+	if(param && !userIsTyping){
+		$("#dosenSearch").prop('readonly', false);
+		theDosenSearch.style.opacity = "1";
+	}
+	else {
+		$("#dosenSearch").prop('readonly', true);
+		theDosenSearch.style.opacity = ".5";
+	}
 }
 
 daftarDosen.addEventListener("click", function() {checkOption(false);}, false);

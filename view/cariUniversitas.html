@@ -27,12 +27,16 @@
 				<!-- Dosen section -->
 				<div class="search-input">
 					<div class="search-method">
-						<input type="radio" name="searchMethod" id="lihatDaftarDosen" onclick="">
-						<label class="label-searchmethod" for="lihatDaftarDosen"></label>
-						<label class="labelfor-searchmethod" for="lihatDaftarDosen">Lihat Daftar Dosen</label>
-						<input type="radio" name="searchMethod" id="ketikNamaDosen">
-						<label class="label-searchmethod" for="ketikNamaDosen"></label>
-						<label class="labelfor-searchmethod" for="ketikNamaDosen">Ketik Nama Dosen</label>
+						<div class="radio-wrapper">
+							<input type="radio" name="searchMethod" id="lihatDaftarDosen">
+							<label class="label-searchmethod" for="lihatDaftarDosen"></label>
+							<label class="labelfor-searchmethod" for="lihatDaftarDosen">Lihat Daftar Dosen</label>
+						</div>
+						<div class="radio-wrapper">
+							<input type="radio" name="searchMethod" id="ketikNamaDosen">
+							<label class="label-searchmethod" for="ketikNamaDosen"></label>
+							<label class="labelfor-searchmethod" for="ketikNamaDosen">Ketik Nama Dosen</label>
+						</div>
 					</div>
 		  			<input type="text" id="dosenSearch" onkeyup="searchDosen();" placeholder="Ketik nama dosen, contoh, Lili Ayu Wulandhari" readonly>
 				</div>
@@ -48,7 +52,7 @@
 			</div>
 		</div>
 	</div>
-
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../js/data.js"></script>
 	<script src="../js/scriptForUni.js"></script>
