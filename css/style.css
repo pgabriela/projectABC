@@ -105,16 +105,20 @@ body{
 }
 .brand{
 	color: #37474f !important;
+	font-weight: bold;
 }
 @media only screen and (min-width: 768px){
+	.navigation>li>a, .navigation>li{
+		color: #37474f;
+		font-size: 1.5rem;
+		font-weight: bold;
+		border-top: solid 3px #fff;
+		-webkit-transition: border-top 500ms ease-in;
+	    -ms-transition: border-top 500ms ease-in;
+	    transition: border-top 500ms ease-in;
+	}
 	.navigation>li>a{
-	color: #37474f;
-	font-size: 1.5em;
-	font-weight: bold;
-	border-top: solid 3px #fff;
-	-webkit-transition: border-top 500ms ease-in;
-    -ms-transition: border-top 500ms ease-in;
-    transition: border-top 500ms ease-in;
+		padding-top: 12px;
 	}
 	.navigation>li>a:hover{
 		background-color: #fff;
@@ -127,9 +131,17 @@ body{
 		padding-left: 5em;
 		padding-right: 5em;
 	}
+	.log-icon{
+		font-size: 1.2rem;
+	}
+	.username{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-right: 15px;
+	}
 }
 @media only screen and (max-width: 768px){
-	.navigation>li>a{
+	.navigation>li>a, .navigation>li{
 		color: #37474f !important;
 		font-size: 1.2em;
 		margin-top: 5px;
@@ -141,6 +153,9 @@ body{
 	.nav-con{
 		padding-left: 2em;
 		padding-right: 2em;
+	}
+	.log-icon{
+		font-size: .8rem;
 	}
 	.footer{
 		padding: 0.2em 0.5em !important;
@@ -251,7 +266,7 @@ body{
 	position: absolute;
 	padding: 5px 15px;
 	background-color: #fff;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
 	width: 180px;
 	right: 0;
@@ -896,10 +911,34 @@ body{
 		font-size: 1rem;
 	}
 }
-
 /*---------------------End Nilai Dosen---------------------------------------*/
 
-
+/*---------------------Hasil Pencarian---------------------------------------*/
+.hasilpencarian-list{
+	margin-top: 1rem;
+	background-color: #fff;
+	font-size: 2rem;
+	list-style-type: none;
+	color: #37474f;
+	margin-bottom: 0;
+}
+.hasilpencarian-data{
+	position: relative;
+	padding: 1rem 2rem;
+	border-top: 1px solid rgba(34,36,38,.4);
+	border-bottom: 1px solid rgba(34,36,38,.4);
+	line-height: 1;
+}
+.hasilpencarian-data:hover{
+	background-color: rgba(55,71,79,.30);
+}
+.data-rate{
+	position: absolute;
+	right: 0;
+	left: auto;
+	margin-right: 5rem;
+}
+/*---------------------End Hasil Pencarian-----------------------------------*/
 .footer{
 	font-family: 'Lato',sans-serif;
 	padding: 0.2em 1.5em;
