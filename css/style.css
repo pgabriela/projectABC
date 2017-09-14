@@ -914,6 +914,19 @@ body{
 /*---------------------End Nilai Dosen---------------------------------------*/
 
 /*---------------------Hasil Pencarian---------------------------------------*/
+.alphabet{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+.alphabet > span{
+	cursor: pointer;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
 .hasilpencarian-list{
 	margin-top: 1rem;
 	background-color: #fff;
@@ -924,6 +937,7 @@ body{
 }
 .hasilpencarian-data{
 	position: relative;
+	cursor: pointer;
 	padding: 1rem 2rem;
 	border-top: 1px solid rgba(34,36,38,.4);
 	border-bottom: 1px solid rgba(34,36,38,.4);
@@ -937,6 +951,36 @@ body{
 	right: 0;
 	left: auto;
 	margin-right: 5rem;
+}
+@media only screen and (max-width: 768px){
+	.alphabet{
+		font-size: 1rem;
+	}
+	.alphabet > span{
+		padding-right: .25rem;
+		padding-left: .25rem;
+	}
+	.hasilpencarian-list{
+		font-size: 1.5rem;
+	}
+	.data-rate{
+		margin-right: 3rem;
+	}
+}
+@media only screen and (max-width: 450px){
+	.alphabet{
+		font-size: .8rem;
+	}
+	.hasilpencarian-list{
+		font-size: 1rem;
+	}
+	.data-rate{
+		margin-right: 2rem;
+	}
+	.alphabet > span{
+		padding-right: .15rem;
+		padding-left: .15rem;
+	}
 }
 /*---------------------End Hasil Pencarian-----------------------------------*/
 .footer{
