@@ -10,13 +10,18 @@ $(document).ready(function(){
 	$(".course-code").click(function() {
 		$(".nama-matkul").val($(this).text());
 	});
+	$("#btn-login").click(function() {
+		$(".signin").slideToggle();
+	});
 });
 $(document).click(function (e) {
     e.stopPropagation();
     var container = $(".btn-dropdown");
 
-    //check if the clicked area is dropDown or not
     if (container.has(e.target).length === 0) {
         $('.courseCode-list').slideUp();
+    }
+    if (e.target.id != 'signin' && !$('#btn-login').find(e.target).length) {
+        $("#signin").slideUp();
     }
 })
